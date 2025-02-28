@@ -15,7 +15,7 @@ On start minikube
 ```bash
 minikube start
 ```
-Minicube s'utilise avec docker 
+Minikube s'utilise avec docker 
 
 On est maintenant capable de taper cette commande pour vérifier que tout est bien installé.
 ```bash
