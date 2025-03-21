@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: legume-service
+spec:
+  selector:
+    app: legume
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

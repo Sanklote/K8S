@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legume-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: legume
+  template:
+    metadata:
+      labels:
+        app: legume
+    spec:
+      containers:
+      - name: legume-container
+        image: antssy17/legume
+        ports:
+        - containerPort: 80

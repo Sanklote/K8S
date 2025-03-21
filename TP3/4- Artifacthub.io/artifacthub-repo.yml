@@ -1,0 +1,4 @@
+name: "ecommerce-store"
+description: "Helm chart for deploying e-commerce stores"
+type: "chart"
+version: "0.1.0"

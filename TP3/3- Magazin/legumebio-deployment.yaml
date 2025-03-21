@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legumebio-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: legumebio
+  template:
+    metadata:
+      labels:
+        app: legumebio
+    spec:
+      containers:
+      - name: legumebio-container
+        image: antssy17/legumebio
+        ports:
+        - containerPort: 80
